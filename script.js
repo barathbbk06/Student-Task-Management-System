@@ -1,3 +1,5 @@
+let taskCount = 0;
+
 function addTask() {
     const input = document.getElementById("taskInput");
     const task = input.value.trim();
@@ -13,5 +15,8 @@ function addTask() {
     item.textContent = task;
     list.appendChild(item);
 
+    taskCount++;
+    console.log("Total tasks: " + taskCount);
+
     input.value = "";
-}git 
+}
